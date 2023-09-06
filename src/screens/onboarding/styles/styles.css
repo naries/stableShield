@@ -41,7 +41,7 @@
 .register_button {
   border: none;
   cursor: pointer;
-  padding: 12px 50px;
+  padding: 12px 60px;
   border-radius: 4px;
   font-weight: 400;
   margin-right: 20px;
@@ -49,7 +49,7 @@
 
 .login_button {
   cursor: pointer;
-  padding: 12px 50px;
+  padding: 12px 60px;
   border-radius: 4px;
   font-weight: 400;
   background: none;
@@ -58,6 +58,7 @@
 }
 
 .register_button:hover,
+.continueButton:hover,
 .login_button:hover {
   transition: ease-in-out all 0.2s;
   opacity: 0.4;
@@ -98,4 +99,138 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+}
+
+.latestNewsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 100px 0;
+}
+
+.latestNewsContent {
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  padding: 4rem;
+  position: relative;
+  left: -50px;
+  width: 100%;
+  text-align: left;
+  flex-direction: column;
+  background: #e6f2e7;
+}
+
+.continueButton {
+  border: none;
+  border-radius: 4px;
+  padding: 14px 60px;
+  background: #024126;
+  margin-top: 20px;
+  color: white;
+}
+
+.latestNews {
+  margin: 30px 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.trendingContainer {
+  margin: 30px 0;
+}
+
+.newsletter_main_container {
+  margin-top: 200px;
+  padding: 3rem;
+  display: grid;
+  background: #e6f2e7;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  align-items: center;
+}
+
+.trendingContents {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 2rem;
+  align-items: center;
+}
+
+.newsLetterText {
+  font-size: 18px;
+}
+
+.newsLetterContainer {
+  margin: 50px 0;
+}
+
+.searchContents {
+  position: relative;
+}
+.searchContents input {
+  padding: 14px;
+  border: none;
+  background: #fff;
+  outline: none;
+  border-top-left-radius: 6px;
+  box-shadow: 0px 4px 16px 0px #e6f2e7;
+  border-bottom-left-radius: 6px;
+  width: 400px;
+}
+
+/* Footer Stylings here */
+
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  padding: 6rem 4rem;
+  background: #024126;
+  color: white;
+}
+.logoContainer {
+  text-align: left;
+  justify-content: center;
+  margin-right: 40px;
+}
+.left_footer_container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.quickLinks div {
+  margin-bottom: 20px;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.right_container {
+  display: flex;
+  line-height: 26px;
+  justify-content: center;
+  align-items: center;
+}
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+}
+
+.followContainer {
+  margin-top: 65px;
+}
+
+.footertagContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: #034d2d;
+  padding: 2rem;
+  color: white;
 }

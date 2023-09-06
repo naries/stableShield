@@ -47,6 +47,36 @@ function Features() {
       time: "12:00PM GMT+1",
       continueAction: handleClick,
     },
+    {
+      img: require("../img/album.png"),
+      eventImage: require("../img/ticktodo.png"),
+      header: "Event Title",
+      eventDate: "30 Dec, 2021",
+      subtitle:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum faucibus id sed pellentesque. Quam interdum lacinia eu pretium. Elit euismod... ",
+      continueTitle: "Register",
+      more: "Find out more",
+      location: "Event Location/Address",
+      locationImage: require("../img/location.png"),
+      clockImage: require("../img/clock.png"),
+      time: "12:00PM GMT+1",
+      continueAction: handleClick,
+    },
+    {
+      img: require("../img/album.png"),
+      eventImage: require("../img/ticktodo.png"),
+      header: "Event Title",
+      eventDate: "30 Dec, 2021",
+      subtitle:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fermentum faucibus id sed pellentesque. Quam interdum lacinia eu pretium. Elit euismod... ",
+      continueTitle: "Register",
+      more: "Find out more",
+      location: "Event Location/Address",
+      locationImage: require("../img/location.png"),
+      clockImage: require("../img/clock.png"),
+      time: "12:00PM GMT+1",
+      continueAction: handleClick,
+    },
   ];
   return (
     <div className="featuresContainer">
@@ -64,23 +94,26 @@ function Features() {
         ))}
       </div>
       <div className="cardsFeaturesContainer_two">
-        {album_data.map((items, index) => (
-          <AlbumCard
-            key={index}
-            image={items.img}
-            header={items.header}
-            more={items.more}
-            subTitle={items.subtitle}
-            date={items.eventDate}
-            eventImage={items.eventImage}
-            proceedText={items.continueTitle}
-            onProceed={() => items.continueAction}
-            locationImage={items.locationImage}
-            address={items.location}
-            clockImage={items.clockImage}
-            time={items.time}
-          />
-        ))}
+        <h3 className="specialHeader">Featured Events</h3>
+        <div className="cardsFeaturesContainer">
+          {album_data.map((items, index) => (
+            <AlbumCard
+              key={index}
+              image={items.img}
+              header={items.header}
+              more={items.more}
+              subTitle={items.subtitle}
+              date={items.eventDate}
+              eventImage={items.eventImage}
+              proceedText={items.continueTitle}
+              onProceed={() => items.continueAction}
+              locationImage={items.locationImage}
+              address={items.location}
+              clockImage={items.clockImage}
+              time={items.time}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

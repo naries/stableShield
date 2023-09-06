@@ -31,24 +31,32 @@ function AlbumCard(props: CardProps) {
   } = props;
   return (
     <div className="albumCardsContainer">
-      <img src={image} width={189} height={144} alt="" />
-      <div className="itemsContainer">
+      <div className="imgContain">
+        <img src={image} width={189} height={144} alt="" />
+      </div>
+      <div className="secondContainer">
         <div className="albumBottomContainer">
-          <img src={eventImage} width={20} height={20} alt="" />
-          <p>{date}</p>
+          <img
+            src={eventImage}
+            width={20}
+            height={20}
+            alt=""
+            style={{ marginRight: 10 }}
+          />
+          <span>{date}</span>
         </div>
-        <div className="alb_ontainer">
-          <p className="albumHeader">{header}</p>
-          <p className="albumSubtitle">{subTitle}</p>
+        <div className="album_container">
+          <span className="albumHeader">{header}</span>
+          <span className="albumSubtitle">{subTitle}</span>
         </div>
-        <p>{more}</p>
+        <span>{more}</span>
         <div className="albumBottomContainer">
-          <img src={locationImage} alt="" width={20} height={20} />
-          <p>{address}</p>
+          <img src={locationImage} alt="" width={20} height={20} style={{ marginRight: 10 }}/>
+          <span>{address}</span>
         </div>
         <div className="albumBottomContainer">
-          <img src={clockImage} alt="" width={20} height={20} />
-          <p>{time}</p>
+          <img src={clockImage} alt="" width={20} height={20} style={{ marginRight: 10 }}/>
+          <span>{time}</span>
         </div>
         <button className="card_button" onClick={onProceed}>
           {proceedText}
