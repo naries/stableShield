@@ -1,0 +1,55 @@
+.cardsContainer {
+  box-shadow: 0px 4px 16px 0px #0241261a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_text {
+  font-size: 16px;
+}
+
+.subtitle_text {
+  text-align: center;
+}
+
+.card_button {
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  background: #024126;
+  color: white;
+  padding: 10px 30px;
+}
+
+.card_button:hover {
+  opacity: 0.4;
+  transition: all ease-in-out 0.6s;
+  cursor: pointer;
+}
+
+.cardsFeaturesContainer_two {
+  box-shadow: 0px 4px 16px 0px #0241261a;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+}
+
+.albumBottomContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.alb_ontainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+}

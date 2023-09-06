@@ -1,0 +1,101 @@
+.headerContainer {
+  background-image: url("../../../img/herobackground.png");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 75vh;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.heroSection_text {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 100px;
+  color: white;
+  line-height: 40px;
+}
+.heroSection_text_two {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+}
+
+.heroSectionContainer {
+  z-index: 999;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding: 30px;
+  /* position: relative;
+  top: 80px; */
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.register_button {
+  border: none;
+  cursor: pointer;
+  padding: 12px 50px;
+  border-radius: 4px;
+  font-weight: 400;
+  margin-right: 20px;
+}
+
+.login_button {
+  cursor: pointer;
+  padding: 12px 50px;
+  border-radius: 4px;
+  font-weight: 400;
+  background: none;
+  color: white;
+  border: 1px solid grey;
+}
+
+.register_button:hover,
+.login_button:hover {
+  transition: ease-in-out all 0.2s;
+  opacity: 0.4;
+}
+
+.mouseContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+.mouseContainer:hover {
+  opacity: 0.5;
+  transition: all 0.6s ease-in-out;
+  cursor: pointer;
+  transform: translateY(5px);
+}
+
+/* End of hero section styling */
+
+/* Features stylings */
+.featuresContainer {
+  margin-top: 100px;
+  text-align: center;
+}
+.specialHeader {
+  font-size: 32px;
+  color: #024126;
+}
+.cardsFeaturesContainer {
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.cardsFeaturesContainer_two {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
