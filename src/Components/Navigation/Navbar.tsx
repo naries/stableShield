@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-scroll";
+import { Link as DomLink } from "react-router-dom";
 
 const Navbar = ({ click }: any) => {
   const [navbarColor, setNavbarColor] = useState("white");
@@ -82,17 +83,13 @@ const Navbar = ({ click }: any) => {
           </Link>
         </li>
         <li>
-          <Link
+          <DomLink
             to="register"
             className="nav_link"
             style={{ color: navbarColor }}
-            smooth={true}
-            spy={true}
-            offset={-100}
-            duration={500}
           >
             Register
-          </Link>
+          </DomLink>
         </li>
       </ul>
       {/* {Hamburger-Menu} */}

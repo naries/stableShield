@@ -1,7 +1,9 @@
 import React from "react";
 import "../screens/onboarding/styles/styles.css";
+import { useNavigate } from "react-router-dom";
 
 function HeroSection() {
+  const navigate = useNavigate();
   return (
     <div className="heroSectionContainer">
       <h1 className="heroSection_text">
@@ -14,12 +16,19 @@ function HeroSection() {
         </span>
       </h1>
       <div className="buttonContainer">
-        <button className="register_button">Register</button>
-        <button className="login_button">Login</button>
+        <button
+          onClick={() => navigate("register")}
+          className="register_button"
+        >
+          Register
+        </button>
+        <button onClick={() => navigate("login")} className="login_button">
+          Login
+        </button>
       </div>
       <div>
         <div className="mouseContainer">
-          <img src={require("../img/mouse.png")} height={40} alt=""/>
+          <img src={require("../img/mouse.png")} height={40} alt="" />
         </div>
       </div>
     </div>
